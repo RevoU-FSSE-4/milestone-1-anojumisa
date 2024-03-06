@@ -22,7 +22,8 @@
         font-size: 1rem;
     }
     .destination {
-        height: 180vh;
+        /* height: 180vh; */
+        height: 100%;
     }
     .planet p {
         font-size: 0.5em;
@@ -31,7 +32,8 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
         width: 100vw;
-        height: 240vh;
+        /* height: 240vh; */
+        height: 100%;
     }
     .fleet-text {
         grid-area: 1 / 1 / 2 / 4;
@@ -82,7 +84,8 @@
     }
     .testimonials {
         margin: 10px;
-        height: 200vh;
+        /* height: 200vh; */
+        height: 100%;
     }
     .testimonials li {
         display: flex;
@@ -111,5 +114,94 @@
     .news p,
     .news button {
         font-size: 0.6rem;
+    }
+}
+
+@media only screen and (min-width: 374px) and (max-width: 768px) {
+    nav {
+        font-size: 0.5rem;
+    }
+    .hero-text {
+        font-size: 1rem;
+    }
+    button {
+        font-size: 1rem;
+    }
+    .destination {
+        display: flex;
+        flex-direction: column;
+        /* height: 400vh; */
+        height: 100%;
+    }
+    .destination h3,
+    .destination p {
+        font-size: 1rem;
+        padding: 20px;
+    }
+    .destination button {
+    }
+    .destination img {
+        width: 75vw;
+    }
+    .fleet-text {
+        grid-area: fleet-text;
+    }
+    .spaceship-1 {
+        grid-area: spaceship-1;
+    }
+    .spaceship-2 {
+        grid-area: spaceship-2;
+    }
+    .spaceship-3 {
+        grid-area: spaceship-3;
+    }
+    .spaceship-4 {
+        grid-area: spaceship-4;
+    }
+    .spaceship-5 {
+        grid-area: spaceship-5;
+    }
+    .spaceship-6 {
+        grid-area: spaceship-6;
+    }
+    .spaceship-7 {
+        grid-area: spaceship-7;
+    }
+    .spaceship-8 {
+        grid-area: spaceship-8;
+    }
+    .spaceship-9 {
+        grid-area: spaceship-9;
+    }
+    .ship {
+        width: 10rem;
+    }
+
+    .fleet {
+        display: grid;
+        /* height: 325vh; */
+        height: 100%;
+        grid-template-columns: 0.7fr 0.7fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "fleet-text spaceship-1"
+            "spaceship-2 spaceship-3"
+            "spaceship-4 spaceship-5"
+            "spaceship-6 spaceship-7"
+            "spaceship-8 spaceship-9";
+    }
+    .fleet-text p {
+        font-size: 0.5rem;
+    }
+    /* .testimonials {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100%;
+        transition: none;
+    } */
+    .news {
+        display: flex;
+        flex-direction: column;
     }
 }
