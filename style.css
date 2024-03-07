@@ -47,6 +47,7 @@ nav li:hover {
     transform: translate(-50%, -50%);
     color: white;
     background-color: transparent;
+    filter: drop-shadow(0 0 0.75rem crimson);
 }
 button {
     padding: 1em;
@@ -81,6 +82,7 @@ h2 {
     align-items: center;
     justify-items: center;
     margin-left: 20px;
+    filter: drop-shadow(0 0 0.75rem crimson);
 }
 .planet {
     align-items: center;
@@ -89,6 +91,7 @@ h2 {
     text-shadow: 0 0 3px #e6be0b, 0 0 5px #0000ff;
     color: lightgray;
     margin: 0px 20px;
+    filter: drop-shadow(0 0 0.75rem crimson);
 }
 .planet p {
     font-size: 1.5rem;
@@ -154,7 +157,8 @@ button {
     height: 25rem;
     margin: auto;
     transition: width 1s, height 1s, transform 1s;
-    border: 0.1rem solid lightgrey;
+    border: 0.1rem solid rgb(197, 76, 76);
+    filter: drop-shadow(0 0 0.75rem crimson);
 }
 .ship img {
     object-fit: contain;
@@ -335,7 +339,7 @@ p {
 .brand img {
     width: 5em;
     justify-self: center;
-    filter: drop-shadow(10px 7px 5px rgb(180, 139, 4));
+    filter: drop-shadow(5px 1px 2px rgb(179, 146, 37));
 }
 footer p {
     font-family: "Chakra Petch", sans-serif;
