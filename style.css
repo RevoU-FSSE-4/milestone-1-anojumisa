@@ -436,3 +436,9 @@ button {
         translate: 0px 0px 0px;
     }
 }
+.text-animation {
+    opacity: 0;
+    animation: text-trans 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+}
