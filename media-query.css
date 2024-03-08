@@ -1,3 +1,8 @@
+@media only screen and (min-width: 1240px) and (max-width: 1440px) {
+    .name p {
+        font-size: 0.6em;
+    }
+}
 @media only screen and (min-width: 768px) and (max-width: 1240px) {
     .fleet {
         display: grid;
@@ -39,6 +44,9 @@
     }
     .spaceship-9 {
         grid-area: 4 / 3 / 5 / 4;
+    }
+    .name p {
+        font-size: 0.5em;
     }
 }
 @media screen and (max-width: 768px) {
@@ -154,13 +162,21 @@
 
 @media only screen and (min-width: 374px) and (max-width: 768px) {
     nav {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
     .hero-text {
         font-size: 1rem;
     }
     button {
         font-size: 1rem;
+        border-radius: 10px;
+    }
+    h2 {
+        font-size: 0.8em;
+    }
+    .planet {
+        filter: drop-shadow(0 0 0.75rem crimson);
+        margin: 10px 20px;
     }
     .destination {
         display: flex;
@@ -169,11 +185,11 @@
     }
     .destination h3,
     .destination p {
-        font-size: 1rem;
-        padding: 20px;
+        font-size: 0.8rem;
+        padding: 10px 0px;
     }
     .destination img {
-        width: 75vw;
+        width: 50vw;
     }
     .fleet-text {
         grid-area: fleet-text;
@@ -206,13 +222,14 @@
         grid-area: spaceship-9;
     }
     .ship {
-        width: 10rem;
+        width: 12rem;
+        border: 0.1rem solid rgb(197, 76, 76);
     }
 
     .fleet {
         display: grid;
         height: 100%;
-        grid-template-columns: 0.7fr 0.7fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
             "fleet-text spaceship-1"
@@ -230,14 +247,71 @@
         flex-direction: column;
         flex-wrap: wrap;
     }
+    .testimonials {
+        width: 95vw;
+        height: 100%;
+        overflow: hidden;
+        margin: 10px auto;
+        margin-top: 5px;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    }
+    .testimonials ul {
+        width: 100vw;
+        height: 10vh;
+    }
+    .testimonials li img {
+        width: 38vw;
+    }
+    .testimonials li {
+        position: relative;
+        width: 30px;
+        float: left;
+        border-left: 1px solid #888;
+    }
+
+    .testimonials ul li:hover {
+        background: rgb(138, 132, 132);
+    }
+    .name {
+        background: rgba(25, 24, 24, 0.951);
+        position: absolute;
+        left: 0;
+        padding-top: 0;
+        color: white;
+        width: 150px;
+        font-size: 0.5em;
+    }
+    .name a,
+    .name p {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+        padding-right: 35px;
+        font-size: 1em;
+        height: fit-content;
+        font-size: 0.5em;
+    }
+    .name a {
+        padding-bottom: 0;
+    }
+    .name p {
+        padding-top: 5px;
+    }
     .news {
         display: flex;
+
         flex-direction: column;
+    }
+    .news-text {
+        margin: 20px 0;
     }
 }
 @media screen and (max-width: 374px) {
     nav {
-        font-size: 0.3em;
+        font-size: 0.5em;
     }
     header {
         width: 100vw;
@@ -246,14 +320,18 @@
         font-size: 0.7em;
     }
     button {
-        padding: 5%;
+        padding: 2%;
         border-radius: 6px;
+        font-size: 12px;
     }
     .destination {
         width: 100vw;
         font-size: 0.5em;
         display: flex;
         flex-direction: column;
+    }
+    .planet {
+        margin: 5px;
     }
     .destination button {
         font-size: 0.3em;
@@ -269,12 +347,66 @@
     }
     .ship {
         width: 12rem;
+        border: 0.1rem solid rgb(197, 76, 76);
     }
     .fleet-text {
         font-size: 0.3em;
     }
     .testimonials {
-        display: none;
+        /* display: none; */
+    }
+    .testimonials {
+        width: 95vw;
+        height: 100%;
+        overflow: hidden;
+        margin: 10px auto;
+        margin-top: 5px;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    }
+    .testimonials ul {
+        width: 100vw;
+        height: 100%;
+    }
+    .testimonials li img {
+        width: 38vw;
+    }
+    .testimonials li {
+        position: relative;
+        width: 30px;
+        float: left;
+        border-left: 1px solid #888;
+    }
+
+    .testimonials ul li:hover {
+        background: rgb(138, 132, 132);
+    }
+    .name {
+        background: rgba(25, 24, 24, 0.951);
+        position: absolute;
+        left: 0;
+        padding-top: 0;
+        color: white;
+        width: 113px;
+        font-size: 0.4em;
+    }
+    .name a,
+    .name p {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        padding-right: 25px;
+        font-size: 1em;
+        height: fit-content;
+        font-size: 0.5em;
+    }
+    .name a {
+        padding-bottom: 0;
+    }
+    .name p {
+        padding-top: 5px;
     }
     .news {
         display: flex;
@@ -284,6 +416,9 @@
         display: flex;
         flex-direction: column;
         font-size: 0.4em;
+        align-items: center;
+    }
+    .connect {
         align-items: center;
     }
     .copyright {
